@@ -160,6 +160,7 @@ section{
     border: 0.9px solid rgba(133, 132, 132, 0.5);
     padding: 10px;
     font-size: 15px;
+    cursor: pointer;
 }
 .radio_button{
     width: 10px;
@@ -194,6 +195,7 @@ button{
     font-size: 15px;
     font-weight: bold;
     color: #fff;
+    cursor: pointer;
 }
 
 .already_have_texts{
