@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: arial;
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    row-gap: 10px;
+}
+img{
+    width: 388px;
+    height: 90px;
+    background-color: transparent !important;
+}
+section{
+    width: 388px;
+    height: 488px;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    row-gap: 13px;
+    box-shadow: 5px 5px 10px rgba(197, 197, 197, 0.5), -5px 5px 10px rgba(197, 197, 197, 0.5);
+}
+.header_texts{
+    width: 388px;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 7px;
+    border-bottom: 0.1px solid rgba(158, 158, 158, 0.5);
+}
+.frist_text{
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.last_text{
+    font-size: 14px;
+    color: rgba(7, 7, 7, 0.6);
+}
+
+
+.input_area{
+    width: 358px;
+    height: 400px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.first_last_name_area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    box-sizing: border-box;
+}
+:is(.frist_name_input, .last_name_input){
+    width: 174px;
+    height: 36px;
+    background-color: transparent !important;
+    align-items: center;
+    border-radius: 4px;
+    border: 0.9px solid rgba(133, 132, 132, 0.5);
+    padding: 10px;
+    outline: none;
+}
+
+
+.mobile_password_area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+:is(.mobile_number_input, .password_input){
+    width: 100%;
+    height: 36px;
+    background-color: transparent !important;
+    border-radius: 4px;
+    border: 0.9px solid rgba(133, 132, 132, 0.5);
+    padding: 10px;
+
+}
+:is(.frist_name_input, .last_name_input,
+    .mobile_number_input, .password_input):focus
+    {
+        outline: 1px solid rgb(112, 114, 223);
+        border: none;
+        box-shadow: 1px 1px 2px rgb(112, 114, 223), -1px -1px 2px rgb(112, 114, 223);
+    }
+
+
+:is(.date_of_birth_section, .grnder_section){
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    row-gap: 8px;
+}
+:is(.date_of_birth_text, .gender_text){
+    font-size: 11px;
+    color: rgba(7, 7, 7, 0.6);
+}
+:is(.date_of_birth_span_text, .gender_span_text){
+    background-color: rgba(7, 7, 7, 0.6);
+    padding: 0 3px;
+    border-radius: 50%;
+    color: #fff;
+}
+:is(.date_of_birth_area, .gender_aria){
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    justify-content: space-between;
+}
+
+
+:is(.day, .month, .year){
+    width: 111px;
+    height: 30px;
+    background-color: transparent !important;
+    border-radius: 4px;
+    border: 0.9px solid rgba(133, 132, 132, 0.5);
+    padding: 0px 5px;
+    cursor: pointer;
+    outline: none;
+}
+:is(.female_input, .male_input, .custom_input){
+    width: 116px;
+    height: 30px;
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 0.9px solid rgba(133, 132, 132, 0.5);
+    padding: 10px;
+    font-size: 15px;
+}
+.radio_button{
+    width: 10px;
+}
+
+
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 18px;
+}
+
+.footer_section p{
+    font-size: 10px;
+    padding-top: 2px;
+    color: rgba(7, 7, 7, 0.6);
+    line-height: 14px;
+    font-weight: bold;
+}
+
+button{
+    width: 175px;
+    height: 33px;
+    background-color: rgba(28, 177, 28);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.already_have_texts{
+    font-size: 16px;
+    color: rgb(115, 121, 218);
+}
+
