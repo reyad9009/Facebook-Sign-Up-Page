@@ -201,5 +201,6 @@ button{
 .already_have_texts{
     font-size: 16px;
     color: rgb(115, 121, 218);
+    cursor: pointer;
 }
 
