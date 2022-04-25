@@ -13,22 +13,23 @@
                 <span class="frist_text">Create a new account</span>
                     <span class="last_text">It's quick and easy.</span>
                         </div>
-            
+
+            <form action="#" method="get">
             <div class="input_area">
                 <div class="first_last_name_area">
-                    <input class="frist_name_input" type="text" name="user" id="user" placeholder="First name" required>
-                    <input class="last_name_input" type="text" name="user" id="user" placeholder="Sumame" required>
+                    <input class="frist_name_input" type="name" name="user" id="user" placeholder="First name" required autocomplete="off">
+                    <input class="last_name_input" type="name" name="user" id="user" placeholder="Sumame" required autocomplete="off">
                 </div>
 
                 <div class="mobile_password_area">
-                    <input class="mobile_number_input" type="text" id="email" name="Useremail" placeholder="mobile number or email address" required>
-                    <input class="password_input" type="password" name="pass" placeholder="New password" required>
+                    <input class="mobile_number_input" type="email" id="email" name="Useremail" placeholder="mobile number or email address" autocomplete="off" required>
+                    <input class="password_input" type="password" name="password" id="password" placeholder="New password" required>
                 </div>
 
                 <div class="date_of_birth_section"><!--date of birth section start-->
                         <p class="date_of_birth_text">Date of birth <span class="date_of_birth_span_text">?</span></p>
                     <div class="date_of_birth_area"><!--date of birth area start-->
-                        <select class="day" name="number">
+                        <select class="day" name="number" id="date" required>
                             <option value="01">01</option>
                             <option value="02">02</option>
                             <option value="03">03</option>
@@ -109,26 +110,27 @@
                    
                         <div class="female_input">
                             <label for="gen1">Female</label>
-                            <input type="radio" id="gen1" name="gender" class="radio_button">
+                            <input class="radio_button" type="radio" id="gen1" name="gender" required>
                         </div>
                         <div class="male_input">
                             <label for="gen2">Male</label>
-                            <input type="radio" id="gen2" name="gender" class="radio_button">
+                            <input class="radio_button" type="radio" id="gen2" name="gender" required>
                         </div>
                         <div class="custom_input">
                             <label for="gen3">Custom</label>
-                            <input type="radio" id="gen3" name="gender" class="radio_button">
+                            <input class="radio_button" type="radio" id="gen3" name="gender" required>
                         </div>
                     </div>
                 </div><!--grnder_section-->
 
                 <div class="footer_section">
                     <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy You may receive SMS notifications from us and can opt out any time.</p>
-                        <button>Sign Up</button>
+                        <button type="submit">Sign Up</button>
                     <span class="already_have_texts">Already have an account?</span>
                 </div>
 
             </div><!--input_arias end-->
+            </form>
         </section>
     </main>
 </body>
